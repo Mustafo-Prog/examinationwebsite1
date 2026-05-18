@@ -1,4 +1,22 @@
 h1,h2,h3,h4,h5,h6{padding: 0px !important;}*, *::before, *::after{box-sizing: border-box;margin: 0;padding: 0;}html,body{scroll-behavior: smooth;height: 100%;}body{font-family: 'Segoe UI', sans-serif;}a{text-decoration: none;}button{border: none;background: none;cursor: pointer;}img{max-width: 100%;height: auto;object-fit: cover;}
+#backtop{
+    position: fixed;
+    bottom: -100%;
+    right: 20px;
+    background: #4579CB;
+    cursor: pointer;
+    color: #fefefe;
+    padding: 10px 15px;
+    font-size: 35px;
+    border-radius: 50%;
+    z-index: 99;
+    transition: 150ms ease-in-out;
+    opacity: 0;
+}
+#backtop:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
 .wrapper{
     position: relative;
 }

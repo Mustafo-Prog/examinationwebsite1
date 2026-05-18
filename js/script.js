@@ -1,3 +1,5 @@
+//slider
+
 function slider1(){
     document.getElementById("directorLeftSlide").src = "./img/co-working-background.jpg"
     document.getElementById("directorLeftSlide1").src = "./img/co-working-background.jpg"
@@ -148,4 +150,23 @@ function openNavbar(){
 
 function closeNavbar(){
     document.querySelector('.navbar-a-right').style.top = '-100%'
+}
+
+//backtop
+
+
+window.addEventListener('scroll', () => {
+    togglebacktop()
+})
+
+function togglebacktop() {
+    let backtop = document.getElementById("backtop")
+
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        backtop.style.bottom = "30px"
+        backtop.style.opacity = '1'
+    } else {
+        backtop.style.opacity = '0'
+        backtop.style.bottom = "-100%"
+    }
 }
